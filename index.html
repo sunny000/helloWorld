@@ -9,7 +9,17 @@
 </head>
 <body>
 <h1>Hello World!</h1>
+<p id='ts'></p>
 <script>
+// Get current date and time
+let currentDate = new Date();
+
+// Format the date and time as a string
+let formattedDateTime = currentDate.toLocaleString();
+
+// Print or use the formatted date and time
+console.log("Current Date and Time: " + formattedDateTime);
+document.getElementById('ts').innerHTML=("Current Date and Time: " + formattedDateTime);
 </script>
 </body>	
 </html>
